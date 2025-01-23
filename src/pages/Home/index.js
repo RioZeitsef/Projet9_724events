@@ -10,10 +10,10 @@ import Logo from "../../components/Logo";
 import Icon from "../../components/Icon";
 import Form from "../../containers/Form";
 import Modal from "../../containers/Modal";
-import DataContext, { useData } from "../../contexts/DataContext";
+import { useData } from "../../contexts/DataContext";
 
 const Page = () => {
-  const { last } = useData(DataContext.length - 1);
+  const { last } = useData();
   return (
     <>
       <header>
