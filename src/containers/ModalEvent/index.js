@@ -3,7 +3,6 @@ import { getMonth } from "../../helpers/Date";
 
 import "./style.scss";
 
-// Fonction utilitaire locale pour capitaliser la première lettre
 const capitalizeFirstLetter = (string) =>
   string.charAt(0).toUpperCase() + string.slice(1);
 
