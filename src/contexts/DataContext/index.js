@@ -31,12 +31,16 @@ export const DataProvider = ({ children }) => {
     getData();
   });
 
+  // Ajout de la constante last pour récupérer le dernier événement
+  const last = data?.events?.[data.events.length - 1] || null;
+
   return (
     <DataContext.Provider
       // eslint-disable-next-line react/jsx-no-constructed-context-values
       value={{
         data,
         error,
+        last,
       }}
     >
       {children}

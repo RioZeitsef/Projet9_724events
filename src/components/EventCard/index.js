@@ -28,18 +28,24 @@ const EventCard = ({
   </div>
 );
 
+// retrait de la mention .isrequired pour les props imageSrc et title
 EventCard.propTypes = {
-  imageSrc: PropTypes.string.isRequired,
+  imageSrc: PropTypes.string,
   imageAlt: PropTypes.string,
-  date: PropTypes.instanceOf(Date).isRequired,
-  title: PropTypes.string.isRequired,
+  date: PropTypes.instanceOf(Date),
+  title: PropTypes.string,
   small: PropTypes.bool,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
 };
 
+// intégration de pros par défaut afin de résoudre l'erreur des props required
 EventCard.defaultProps = {
+  imageSrc: "",
   imageAlt: "image",
   small: false,
+  date: new Date(),
+  title: "",
+  label: "",
 };
 
 export default EventCard;
