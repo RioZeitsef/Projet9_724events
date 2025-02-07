@@ -13,4 +13,4 @@ export const MONTHS = {
   12: "décembre",
 };
 
-export const getMonth = (date) => MONTHS[date.getMonth() + 1];
+export const getMonth = (date) => MONTHS[date.getMonth() + 1]; // Erreur de récupération du bon mois fixer avec l'ajout de l'index +1 pour récupérer le bon mois

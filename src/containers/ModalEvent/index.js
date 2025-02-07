@@ -3,6 +3,7 @@ import { getMonth } from "../../helpers/Date";
 
 import "./style.scss";
 
+// Capitalsation de la première lettre du Mois affiché dynamiquement dans la modale
 const capitalizeFirstLetter = (string) =>
   string.charAt(0).toUpperCase() + string.slice(1);
 

@@ -26,6 +26,7 @@ export const DataProvider = ({ children }) => {
       setError(err);
     }
   }, []);
+
   useEffect(() => {
     if (data) return;
     getData();
