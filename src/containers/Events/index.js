@@ -19,7 +19,7 @@ const EventList = () => {
       const start = (currentPage - 1) * PER_PAGE;
       const end = start + PER_PAGE;
       return index >= start && index < end;
-    }); // filtrage sur les eventements et la paagination pour n'afficher que 9 évenemnts par pages
+    }); // filtrage sur les evenements et la pagination pour n'afficher que 9 évenemnts par pages
 
   const changeType = (evtType) => {
     setCurrentPage(1);

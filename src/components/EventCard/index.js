@@ -38,7 +38,7 @@ EventCard.propTypes = {
   label: PropTypes.string,
 };
 
-// intégration de pros par défaut afin de résoudre l'erreur des props required
+// intégration de props par défaut afin de résoudre l'erreur des props required
 EventCard.defaultProps = {
   imageSrc: "",
   imageAlt: "image",

@@ -4,6 +4,7 @@ import Field, { FIELD_TYPES } from "../../components/Field";
 import Select from "../../components/Select";
 import Button, { BUTTON_TYPES } from "../../components/Button";
 
+// Simulation de l'appel API permettant de valider le formulaire
 const mockContactApi = () =>
   new Promise((resolve) => {
     setTimeout(resolve, 500);
@@ -15,7 +16,7 @@ const Form = ({ onSuccess, onError }) => {
     async (evt) => {
       evt.preventDefault();
       setSending(true);
-      // We try to call mockContactApi
+      // Try Catch qui permet de gérer les erreurs de l'API
       try {
         await mockContactApi();
         setSending(false);
