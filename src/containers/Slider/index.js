@@ -11,7 +11,7 @@ const Slider = () => {
   // Permet de faire un tri en recréant un tableau avec les données grâçe à data.focus et de le trier par date décroissante
   const byDateDesc = data?.focus
     ? [...data.focus].sort((evtA, evtB) =>
-        new Date(evtA.date) > new Date(evtB.date) ? -1 : 1
+        new Date(evtA.date) < new Date(evtB.date) ? -1 : 1
       )
     : [];
 
